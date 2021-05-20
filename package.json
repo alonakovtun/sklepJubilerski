@@ -1,0 +1,23 @@
+{
+  "name": "sklepjubilerski",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./sass/style.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alonakovtun/sklepJubilerski.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alonakovtun/sklepJubilerski/issues"
+  },
+  "homepage": "https://github.com/alonakovtun/sklepJubilerski#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
+}
