@@ -74,160 +74,127 @@
     </header>
 
     <main id="main-site">
-        <!-- Products -->
-        <section id="product">
-            <div class="container">
-                <div class="row m-2">
-                    <div class="col-sm-5 my-5">
-                        <img src="./assets/products/1.jpg" alt="product" class="img-fluid mx-auto d-block">
-                        <div class="form-row pt-4 font-size-16 font-koho d-flex flex-wrap">
-                            <div class="col m-1">
-                                <button type="submit" class="btn  btn-outline-dark form-control">Proceed to Buy</button>
+        <!-- Shopping cart section -->
+        <section id="cart" class="py-3">
+            <div class="container-fluid w-75">
+                <h5 class="font-koho font-size-20">Shopping cart</h5>
+                <!-- shopping cart items -->
+                <div class="row">
+                    <div class="col-sm-9">
+                        <!-- cart item -->
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-2">
+                                <img src="./assets/products/4.jpg" alt="cart1" class="img-fluid" style="height: 120px;">
                             </div>
-                            <div class="col m-1">
-                                <button type="submit" class="btn btn-outline-dark form-control">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-7">
-                        <h5 class="font-koho font-size-20">Diamond vine ring in platinum</h5>
-                        <small class="font-koho">by Tiffany</small>
-                        <div class="d-flex">
-                            <div class="rating font-size-12">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                            </div>
-                            <a href="" class="px-2 font-raleway font-size-14 text-dark text-decoration-none">20.547 ratings | 1000+ answered questions</a>
-                        </div>
-                        <hr class="m-0">
-
-                        <!-- product price -->
-                        <table class="my-3">
-                            <tr class="font-raleway font-size-14">
-                                <td>M.R.P </td>
-                                <td><strike>$3,800</strike></td>
-                            </tr>
-                            <tr class="font-raleway font-size-14">
-                                <td class="font-size-16">Deal Price: </td>
-                                <td class="font-size-20">$<span>3,650</span><small class="text-dark font-size-12"> &nbsp;Inclusive of all taxes</small></td>
-                            </tr>
-                            <tr class="font-raleway font-size-14">
-                                <td class="font-size-16">You Save: </td>
-                                <td class="font-size-20">$<span>150</span></td>
-                            </tr>
-                        </table>
-                        <!-- !product price -->
-
-                        <!-- policy -->
-                        <div id="policy">
-                            <div class="d-flex">
-                                <div class="return text-center mr-5">
-                                    <div class="font-size-20 my-2 color-second">
-                                        <span class="fas fa-retweet border p-3 rounded-pill"></span>
+                            <div class="col-sm-8">
+                                <h5 class="font-koho font-size-20">Fleur de Lis key bar pendant in platinum with diamonds.</h5>
+                                <small>by Tiffany</small>
+                                <!-- product rating -->
+                                <div class="d-flex">
+                                    <div class="rating font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
                                     </div>
-                                    <a href="" class="font-raleway text-secondary text-decoration-none font">10 Days <br>Replacement</a>
+                                    <a href="" class="px-2 font-raleway text-decoration-none text-dark font-size-14">20,458 ratings</a>
                                 </div>
-                                <div class="delivery text-center mr-5">
-                                    <div class="font-size-20 my-2 color-second">
-                                        <span class="fas fa-truck border p-3 rounded-pill"></span>
-                                    </div>
-                                    <a href="" class="font-raleway text-secondary text-decoration-none font">Daily Tuition <br>Deliverd</a>
-                                </div>
-                                <div class="warranty text-center mr-5">
-                                    <div class="font-size-20 my-2 color-second">
-                                        <span class="fas fa-check border p-3 rounded-pill"></span>
-                                    </div>
-                                    <a href="" class="font-raleway text-secondary text-decoration-none font">3 Year <br>Warranty</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- !policy -->
-                        <hr>
+                                <!-- !product rating -->
 
-                        <!-- order details -->
-                        <div id="order-details" class="font-raleway d-flex flex-column text-dark">
-                            <small>Delivery by: May 30 - June 05</small>
-                            <small>Sold by: <a href="" class=" text-dark text-decoration-none">someone</a> </small>
-                            <small><i class="fas fa-map-marker-alt color-primary"></i>&nbsp;&nbsp;Deliver to Customer - 424201</small>
-                        </div>
-                        <!-- !order details -->
-                        <div class="row">
-                            <div class="col-6">
-                                <!-- metal -->
-                                <div class="metal my-3">
-                                    <div class="d-flex justify-content-around">
-                                        <h6 class="font-koho">Metal:</h6>
-                                        <div class="p-2 bg-light rounded-circle">
-                                            <button class="btn font-size-14 font-koho">Silver</button>
-                                        </div>
-                                        <div class="p-2 color-yellow-bg rounded-circle">
-                                            <button class="btn font-size-14 text-white font-koho">Gold</button>
-                                        </div>
-
+                                <!-- product qty -->
+                                <div class="qty d-flex pt-2">
+                                    <div class="d-flex font-raleway w-25">
+                                        <button class="qty-up border bg-light" data-id="pro1"><i class="fas fa-angle-up"></i></button>
+                                        <input type="text" data-id="pro1" class="qty_input border px-2 w-50 bg-light" disabled value="1" placeholder="1">
+                                        <button class="qty-down border bg-light" data-id="pro1"><i class="fas fa-angle-down"></i></button>
                                     </div>
+                                    <button type="submit" class="btn text-danger font-koho border-right" px-3>Delete</button>
+                                    <button type="submit" class="btn text-danger font-koho " px-3>Save for later</button>
                                 </div>
-                                <!-- !metal -->
-                            </div>
-                            <div class="col-6">
-                                <div class="qty d-flex my-3">
-                                    <h6 class="font-koho">Qty:</h6>
-                                    <div class="px-4 d-flex font-raleway">
-                                        <button class="qty-up border bg-light"><i class="fas fa-angle-up"></i></button>
-                                        <input type="text" class="qty_input border px-2 w-50 bg-light" disabled value="1" placeholder="1">
-                                        <button class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- size -->
-                        <div class="size my-3">
-                            <h6 class="font-koho">Size:</h6>
-                            <div class="d-flex  w-75">
-                                <div class="font-rubik border p-2 m-2">
-                                    <button class="btn p-0 font-size-14">16</button>
-                                </div>
-                                <div class="font-rubik border p-2 m-2">
-                                    <button class="btn p-0 font-size-14">16.5</button>
-                                </div>
-                                <div class="font-rubik border p-2 m-2">
-                                    <button class="btn p-0 font-size-14">17</button>
-                                </div>
-                                <div class="font-rubik border p-2 m-2">
-                                    <button class="btn p-0 font-size-14">17.5</button>
-                                </div>
-                                <div class="font-rubik border p-2 m-2">
-                                    <button class="btn p-0 font-size-14">18</button>
+                                <!-- !product qty -->
+                            </div>
+
+                            <div class="col-sm-2">
+                                <div class="font-size-20 font-koho">
+                                    $ <span class="product_price">925</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- !size -->
+                        <!-- !cart item -->
+
+                        <!-- cart item -->
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-2">
+                                <img src="./assets/products/4.jpg" alt="cart1" class="img-fluid" style="height: 120px;">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="font-koho font-size-20">Fleur de Lis key bar pendant in platinum with diamonds.</h5>
+                                <small>by Tiffany</small>
+                                <!-- product rating -->
+                                <div class="d-flex">
+                                    <div class="rating font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <a href="" class="px-2 font-raleway text-decoration-none text-dark font-size-14">20,458 ratings</a>
+                                </div>
+                                <!-- !product rating -->
+
+                                <!-- product qty -->
+                                <div class="qty d-flex pt-2">
+                                    <div class="d-flex font-raleway w-25">
+                                        <button class="qty-up border bg-light" data-id="pro2"><i class="fas fa-angle-up"></i></button>
+                                        <input type="text" data-id="pro2" class="qty_input border px-2 w-50 bg-light" disabled value="1" placeholder="1">
+                                        <button class="qty-down border bg-light" data-id="pro2"><i class="fas fa-angle-down"></i></button>
+                                    </div>
+                                    <button type="submit" class="btn text-danger font-koho border-right" px-3>Delete</button>
+                                    <button type="submit" class="btn text-danger font-koho " px-3>Save for later</button>
+                                </div>
+
+                                <!-- !product qty -->
+                            </div>
+
+                            <div class="col-sm-2">
+                                <div class="font-size-20 font-koho">
+                                    $ <span class="product_price">925</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !cart item -->
                     </div>
 
-                    <div class="col-12">
-                        <h6 class="font-rubik">Product Description</h6>
-                        <hr>
-                        <p class="font-raleway font-size-14">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptatum quisquam magnam laudantium hic eveniet iusto nisi aliquid culpa aliquam numquam modi nostrum, optio similique consequuntur enim rerum quia temporibus, nam
-                            nesciunt! Iste vel unde aspernatur, dignissimos est cumque eligendi odio explicabo, ducimus reprehenderit doloribus delectus illum, consequuntur provident quibusdam!</p>
-                        <p class="font-raleway font-size-14">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptatum quisquam magnam laudantium hic eveniet iusto nisi aliquid culpa aliquam numquam modi nostrum, optio similique consequuntur enim rerum quia temporibus, nam
-                            nesciunt! Iste vel unde aspernatur, dignissimos est cumque eligendi odio explicabo, ducimus reprehenderit doloribus delectus illum, consequuntur provident quibusdam!</p>
+                    <!-- subtotal section -->
+                    <div class="col-sm-3">
+                        <div class="sub-total border text-center mt-2">
+                            <h6 class="font-size-12 font-raleway text-info py-3"><i class="fas fa-check"></i> Your order is eligible for FREE Delivery</h6>
+                            <div class="border-top py-4">
+                                <h5 class="font-koho font-size-20">Subtotal(2 item): &nbsp; $<span id="deal-price">1850</span> </h5>
+                                <button type="submit" class="btn btn-outline-dark my-3">Proceed to Buy</button>
+                            </div>
+
+                        </div>
                     </div>
+                    <!-- !subtotal section -->
                 </div>
+                <!-- !shopping cart items -->
             </div>
         </section>
-        <!-- !Products -->
+        <!-- !Shopping cart section -->
 
-        <!-- Top Sale -->
-        <section id="top-sale">
+
+        <!-- New Jewelry -->
+        <section id="new-jewelry">
             <div class="container py-5">
-                <h4 class="font-rubik font-size-20">Top Sale</h4>
+                <h4 class="font-rubik font-size-20">New Jewelry</h4>
                 <hr>
                 <!-- owl-carousel -->
                 <div class="owl-carousel owl-theme">
-                    <div class="item py-2 m-2">
+                    <div class="item py-2 m-2 bg-light">
                         <div class="product font-raleway">
                             <a href="#"><img src="./assets/products/6.jpg" alt="product1" class="img-fluid"></a>
                             <div class="text-center">
@@ -248,7 +215,7 @@
                         </div>
                     </div>
 
-                    <div class="item py-2 m-2">
+                    <div class="item py-2 m-2 bg-light">
                         <div class="product font-raleway">
                             <a href="#"><img src="./assets/products/8.jpg" alt="product1" class="img-fluid"></a>
                             <div class="text-center">
@@ -269,7 +236,7 @@
                         </div>
                     </div>
 
-                    <div class="item py-2 m-2">
+                    <div class="item py-2 m-2 bg-light">
                         <div class="product font-raleway">
                             <a href="#"><img src="./assets/products/2.jpg" alt="product1" class="img-fluid"></a>
                             <div class="text-center">
@@ -290,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="item py-2 m-2">
+                    <div class="item py-2 m-2 bg-light">
                         <div class="product font-raleway">
                             <a href="#"><img src="./assets/products/5.jpg" alt="product1" class="img-fluid"></a>
                             <div class="text-center">
@@ -311,7 +278,7 @@
                         </div>
                     </div>
 
-                    <div class="item py-2 m-2">
+                    <div class="item py-2 m-2 bg-light">
                         <div class="product font-raleway">
                             <a href="#"><img src="./assets/products/3.jpg" alt="product1" class="img-fluid"></a>
                             <div class="text-center">
@@ -332,7 +299,7 @@
                         </div>
                     </div>
 
-                    <div class="item py-2 m-2">
+                    <div class="item py-2 m-2 bg-light">
                         <div class="product font-raleway">
                             <a href="#"><img src="./assets/products/4.jpg" alt="product1" class="img-fluid"></a>
                             <div class="text-center">
@@ -353,7 +320,7 @@
                         </div>
                     </div>
 
-                    <div class="item py-2 m-2">
+                    <div class="item py-2 m-2 bg-light">
                         <div class="product font-raleway">
                             <a href="#"><img src="./assets/products/7.jpg" alt="product1" class="img-fluid"></a>
                             <div class="text-center">
@@ -379,7 +346,7 @@
                 <!-- !owl-carousel -->
             </div>
         </section>
-        <!-- !Top Sale -->
+        <!-- !New Jewelry -->
 
 
     </main>
