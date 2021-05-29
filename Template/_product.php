@@ -1,9 +1,17 @@
  <!-- Products -->
+ <?php
+ $db = new DBController();
+ //Product object
+ $product = new Product($db);
+    $item_id = $_GET['item_id'] ?? 1;
+    foreach ($product->getData() as $item):
+        if($item['item_id'] == $item_id):
+ ?>
  <section id="product">
             <div class="container">
                 <div class="row m-2">
                     <div class="col-sm-5 my-5">
-                        <img src="./assets/products/1.jpg" alt="product" class="img-fluid mx-auto d-block">
+                        <img src="<?php echo $item['item_image'] ?? '/assets/products/1.jpg' ?>" alt="product" class="img-fluid mx-auto d-block">
                         <div class="form-row pt-4 font-size-16 font-koho d-flex flex-wrap">
                             <div class="col m-1">
                                 <button type="submit" class="btn  btn-outline-dark form-control">Proceed to Buy</button>
@@ -14,7 +22,7 @@
                         </div>
                     </div>
                     <div class="col-sm-7">
-                        <h5 class="font-koho font-size-20">Diamond vine ring in platinum</h5>
+                        <h5 class="font-koho font-size-20"><?php echo $item['item_name'] ?? 'Unknown'?></h5>
                         <small class="font-koho">by Tiffany</small>
                         <div class="d-flex">
                             <div class="rating font-size-12">
@@ -36,7 +44,7 @@
                             </tr>
                             <tr class="font-raleway font-size-14">
                                 <td class="font-size-16">Deal Price: </td>
-                                <td class="font-size-20">$<span>3,650</span><small class="text-dark font-size-12"> &nbsp;Inclusive of all taxes</small></td>
+                                <td class="font-size-20">$<span><?php echo $item['item_price'] ?? 0?></span><small class="text-dark font-size-12"> &nbsp;Inclusive of all taxes</small></td>
                             </tr>
                             <tr class="font-raleway font-size-14">
                                 <td class="font-size-16">You Save: </td>
@@ -143,3 +151,8 @@
             </div>
         </section>
         <!-- !Products -->
+
+ <?php
+    endif;
+    endforeach;
+ ?>
