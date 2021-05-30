@@ -3,7 +3,7 @@
      $db = new DBController();
      $Cart = new Cart($db);
      if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-         if (isset($_POST['delete-cart-submit'])){
+         if (isset($_POST['delete_cart_submit'])){
              $deletedrecord = $Cart->deleteCart($_POST['item_id']);
          }
 

@@ -3,8 +3,8 @@
 $db = new DBController();
 $Cart = new Cart($db);
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    if (isset($_POST['delete-cart-submit'])){
-        $deletedRecord = $Cart->deleteCart($_POST['item_id']);
+    if (isset($_POST['delete_cart_submit'])){
+        $deletedrecord = $Cart->deleteCart($_POST['item_id']);
     }
 
     if (isset($_POST['cart_submit'])){
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                                 <div class="qty d-flex pt-2">
                                     <form method="post">
                                         <input type="hidden" value="<?php echo $item['item_id'] ?? 0?>" name="item_id">
-                                        <button type="submit" name="delete-cart-submit" class="btn text-danger font-koho border-right pl-0 pr-3">Delete</button>
+                                        <button type="submit" name="delete_cart_submit" class="btn text-danger font-koho border-right  px-3">Delete</button>
                                     </form>
 
                                     <form method="post">
