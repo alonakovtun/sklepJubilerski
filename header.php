@@ -37,7 +37,7 @@
             <p class="font-raleway font-size-12 text-white-50 m-0">Jordan Calderon 430-985 Eleifend St. Duluth Washington 92611 (427) 930-5255</p>
             <div class="font-raleway font-size-14">
                 <a href="#" class="px-3 border-right border-left text-white text-decoration-none">Login</a>
-                <a href="#" class="px-3 border-right text-white text-decoration-none">Whishlist (0)</a>
+                <a href="wishlist.php" class="px-3 border-right text-white text-decoration-none">Whishlist (<?php  $db = new DBController(); $product = new Product($db); echo count($product->getData('wishlist')); ?>)</a>
             </div>
         </div>
 

@@ -2,11 +2,16 @@
  <?php
      $db = new DBController();
      $Cart = new Cart($db);
-    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-        if (isset($_POST['delete_cart_submit'])){
-            $deletedRecord = $Cart->deleteCart($_POST['item_id']);
-        }
-    }
+     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+         if (isset($_POST['delete-cart-submit'])){
+             $deletedrecord = $Cart->deleteCart($_POST['item_id']);
+         }
+
+         // save for later
+         if (isset($_POST['wishlist-submit'])){
+             $Cart->saveForLater($_POST['item_id']);
+         }
+     }
  ?>
 <section id="cart" class="py-3 mb-5">
             <div class="container-fluid w-75">
@@ -56,7 +61,10 @@
                                         <button type="submit" name="delete_cart_submit" class="btn text-danger font-koho border-right  px-3">Delete</button>
                                     </form>
 
-                                    <button type="submit" class="btn text-danger font-koho px-3" >Save for later</button>
+                                    <form method="post">
+                                        <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
+                                        <button type="submit" name="wishlist-submit" class="btn text-danger font-koho px-3" >Save for later</button>
+                                    </form>
                                 </div>
 
                                 <!-- !product qty -->
